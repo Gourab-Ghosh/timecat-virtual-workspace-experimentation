@@ -1,0 +1,28 @@
+[package]
+name = "timecat_bin"
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+repository.workspace = true
+description.workspace = true
+documentation.workspace = true
+license-file.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme.workspace = true
+include.workspace = true
+default-run = "timecat"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+timecat_lib = { path = "../timecat_lib", features = ["binary", "colored", "speed"] }
+
+[[bin]]
+name = "timecat"
+path = "src/bin/timecat.rs"
+
+[[bin]]
+name = "timecat_debug"
+path = "src/bin/debug.rs"

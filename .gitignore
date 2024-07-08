@@ -1,0 +1,12 @@
+/target
+/build
+/.vscode
+/.idea
+**/__pycache__/
+perf*
+**/*.bak
+Cargo.lock
+temp*
+flamegraph.svg
+*.log
+engine_paths.py
